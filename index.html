@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>CALCULATOR</h1>
+        <div class="calculator">
+            <div class="inputs">
+                <input id="input-1" type="number" pattern='[A-Za-z\\s]*' placeholder="Value 1">
+                <input id="input-2" type="number" pattern='[A-Za-z\\s]*' placeholder="Value 2">
+            </div>
+            <div class="calculation">
+                <button onclick="Plus()">+</button>
+                <button onclick="Minus()">-</button>
+                
+                <button onclick="Multi()">x</button>
+                <button onclick="Div()">/</button>
+            </div>
+            <p class="theresult">The Result is</p>
+            <div class="result-box" id="result-box"><p id="result"></p></div>
+            <button onclick="Reset()" class="reset">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
